@@ -1,0 +1,370 @@
+:root {
+  --bg: #ffffff;
+  --ink: #15130f;
+  --muted: #756f64;
+  --line: rgba(21, 19, 15, 0.14);
+  --gold: #a2834b;
+  --panel: #ffffff;
+  --logo-count: 5;
+  --logo-width: 404px;
+  --logo-gap: 36px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100svh;
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family:
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.logo-page {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding-block: 4svh;
+}
+
+.logo-stage {
+  width: 100%;
+  padding: 0;
+}
+
+.intro {
+  width: min(100% - 48px, 820px);
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 4.15rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+.logo-carousel {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+  border-block: 0;
+  padding: 22px 0;
+  mask-image: linear-gradient(90deg, transparent 0, black 8%, black 92%, transparent 100%);
+}
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  gap: var(--logo-gap);
+  padding-left: var(--logo-gap);
+  animation: logo-scroll 30s linear infinite;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.logo-carousel:hover .logo-track {
+  animation-play-state: paused;
+}
+
+.logo-item {
+  width: var(--logo-width);
+  height: 170px;
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 0;
+  background: #ffffff;
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+  padding: 0;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.logo-item:hover,
+.logo-item:focus-visible {
+  opacity: 0.72;
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.logo-item img {
+  display: block;
+  max-width: 78%;
+  max-height: 130px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 1;
+  transform: translateZ(0);
+}
+
+.logo-item--mark img {
+  max-width: 146px;
+  max-height: 146px;
+}
+
+.logo-item--lockup {
+  display: flex;
+  gap: 18px;
+  justify-content: flex-start;
+  padding-inline: 38px;
+}
+
+.logo-item--lockup img {
+  max-width: 106px;
+  max-height: 106px;
+}
+
+.logo-item--lockup span {
+  color: var(--ink);
+  font-family:
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.46rem;
+  font-weight: 700;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.logo-item--alysis img {
+  max-width: 112px;
+  max-height: 112px;
+}
+
+.logo-item--alysis span {
+  text-transform: uppercase;
+}
+
+.logo-item--sylliptor {
+  gap: 16px;
+}
+
+.logo-item--sylliptor img {
+  max-width: 102px;
+  max-height: 102px;
+}
+
+.logo-item--sylliptor span {
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 1.56rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo-item--synesis img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.logo-item--synesis span {
+  color: #0a1628;
+  display: grid;
+  gap: 4px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.logo-item--synesis strong {
+  display: block;
+  font-size: 1.46rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.logo-item--synesis small {
+  display: block;
+  color: #6b5b2f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.96rem;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.logo-item--wide img {
+  max-width: 84%;
+  max-height: 118px;
+}
+
+.logo-img--pixel {
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+.services-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 54px;
+}
+
+.services-button {
+  min-width: 176px;
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: var(--ink);
+  color: #ffffff;
+  padding: 13px 22px;
+  font-size: 0.82rem;
+  font-weight: 750;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.services-button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+  transition: transform 180ms ease;
+}
+
+.services-button:hover,
+.services-button:focus-visible {
+  background: #ffffff;
+  color: var(--ink);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.services-button:hover svg,
+.services-button:focus-visible svg {
+  transform: translateX(3px);
+}
+
+@keyframes logo-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-1 * ((var(--logo-width) + var(--logo-gap)) * var(--logo-count))));
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --logo-width: 276px;
+    --logo-gap: 18px;
+  }
+
+  .logo-page {
+    display: block;
+    padding-block: 18svh 8svh;
+  }
+
+  .logo-stage {
+    padding: 0;
+  }
+
+  .intro {
+    width: min(100% - 32px, 520px);
+    margin-bottom: 42px;
+  }
+
+  h1 {
+    font-size: 2.12rem;
+    line-height: 1.04;
+  }
+
+  .logo-carousel {
+    padding: 12px 0;
+  }
+
+  .services-cta {
+    margin-top: 34px;
+  }
+
+  .services-button {
+    min-width: 156px;
+    min-height: 48px;
+    padding-inline: 20px;
+    font-size: 0.76rem;
+  }
+
+  .logo-item {
+    height: 110px;
+    padding: 0;
+  }
+
+  .logo-item--mark img {
+    max-width: 78px;
+    max-height: 78px;
+  }
+
+  .logo-item--lockup {
+    gap: 10px;
+    padding-inline: 18px;
+  }
+
+  .logo-item--lockup img {
+    max-width: 70px;
+    max-height: 70px;
+  }
+
+  .logo-item--lockup span {
+    font-size: 1.04rem;
+  }
+
+  .logo-item--sylliptor span {
+    font-size: 1.1rem;
+  }
+
+  .logo-item--synesis strong {
+    font-size: 1.04rem;
+  }
+
+  .logo-item--synesis small {
+    font-size: 0.68rem;
+  }
+
+  .logo-item--wide img {
+    max-width: 84%;
+    max-height: 74px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-track {
+    animation: none;
+  }
+}
