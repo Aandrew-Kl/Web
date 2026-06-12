@@ -258,8 +258,8 @@ body {
 
 @media (max-width: 760px) {
   :root {
-    --logo-width: 276px;
-    --logo-gap: 18px;
+    --logo-width: 318px;
+    --logo-gap: 22px;
   }
 
   .logo-page {
@@ -276,7 +276,7 @@ body {
   }
 
   .services-cta {
-    margin-top: 78px;
+    margin-top: 124px;
   }
 
   .services-button {
@@ -287,44 +287,44 @@ body {
   }
 
   .logo-item {
-    height: 110px;
+    height: 130px;
     padding: 0;
   }
 
   .logo-item--mark img {
-    max-width: 78px;
-    max-height: 78px;
+    max-width: 92px;
+    max-height: 92px;
   }
 
   .logo-item--lockup {
-    gap: 10px;
-    padding-inline: 18px;
+    gap: 12px;
+    padding-inline: 22px;
   }
 
   .logo-item--lockup img {
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 84px;
+    max-height: 84px;
   }
 
   .logo-item--lockup span {
-    font-size: 1.04rem;
+    font-size: 1.16rem;
   }
 
   .logo-item--sylliptor span {
-    font-size: 1.1rem;
+    font-size: 1.24rem;
   }
 
   .logo-item--synesis strong {
-    font-size: 1.04rem;
+    font-size: 1.14rem;
   }
 
   .logo-item--synesis small {
-    font-size: 0.68rem;
+    font-size: 0.74rem;
   }
 
   .logo-item--wide img {
     max-width: 84%;
-    max-height: 74px;
+    max-height: 90px;
   }
 }
 
