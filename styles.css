@@ -40,31 +40,6 @@ body {
   padding: 0;
 }
 
-.intro {
-  width: min(100% - 48px, 820px);
-  margin: 0 auto 60px;
-  text-align: center;
-}
-
-.eyebrow {
-  margin: 0 0 18px;
-  color: var(--gold);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0;
-  text-transform: uppercase;
-}
-
-h1 {
-  margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 4.15rem;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0;
-  text-wrap: balance;
-}
-
 .logo-carousel {
   position: relative;
   width: 100vw;
@@ -294,16 +269,6 @@ h1 {
 
   .logo-stage {
     padding: 0;
-  }
-
-  .intro {
-    width: min(100% - 32px, 520px);
-    margin-bottom: 42px;
-  }
-
-  h1 {
-    font-size: 2.12rem;
-    line-height: 1.04;
   }
 
   .logo-carousel {
