@@ -1,10 +1,18 @@
 :root {
   --bg: #ffffff;
-  --ink: #15130f;
-  --muted: #756f64;
-  --line: rgba(21, 19, 15, 0.14);
+  --ink: #14120f;
+  --muted: #746f66;
+  --line: rgba(20, 18, 15, 0.12);
   --gold: #a2834b;
+  --gold-soft: #b29a66;
   --panel: #ffffff;
+  --service-bg: #12110e;
+  --service-fg: #f6f2ea;
+  --service-muted: rgba(246, 242, 234, 0.64);
+  --service-copy: rgba(246, 242, 234, 0.72);
+  --service-strong: rgba(246, 242, 234, 0.84);
+  --service-line: rgba(246, 242, 234, 0.14);
+  --service-line-strong: rgba(246, 242, 234, 0.3);
   --logo-count: 5;
   --logo-width: 460px;
   --logo-gap: 44px;
@@ -178,7 +186,7 @@ body {
 }
 
 .logo-item--synesis span {
-  color: #0a1628;
+  color: var(--ink);
   display: grid;
   gap: 4px;
   font-weight: 800;
@@ -195,7 +203,7 @@ body {
 
 .logo-item--synesis small {
   display: block;
-  color: #6b5b2f;
+  color: var(--gold);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.04rem;
   font-weight: 400;
@@ -269,8 +277,8 @@ body {
 .services-section {
   min-height: 100svh;
   scroll-margin-top: 0;
-  background: var(--ink);
-  color: #ffffff;
+  background: var(--service-bg);
+  color: var(--service-fg);
   padding: clamp(88px, 12vw, 156px) clamp(20px, 5vw, 72px);
 }
 
@@ -289,7 +297,7 @@ body {
 
 .section-kicker {
   margin: 0;
-  color: #b9a16f;
+  color: var(--gold-soft);
   font-size: 0.74rem;
   font-weight: 800;
   letter-spacing: 0;
@@ -310,7 +318,7 @@ body {
 .services-intro {
   max-width: 720px;
   margin: 28px 0 0;
-  color: rgba(255, 255, 255, 0.68);
+  color: var(--service-muted);
   font-size: clamp(0.98rem, 1.35vw, 1.12rem);
   line-height: 1.55;
 }
@@ -318,16 +326,16 @@ body {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
-  border-left: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: 1px solid var(--service-line);
+  border-left: 1px solid var(--service-line);
 }
 
 .service-card {
   min-height: 440px;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid rgba(255, 255, 255, 0.18);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  border-right: 1px solid var(--service-line);
+  border-bottom: 1px solid var(--service-line);
   border-radius: 0;
   padding: clamp(24px, 3vw, 34px);
 }
@@ -340,7 +348,7 @@ body {
 }
 
 .service-index {
-  color: #b9a16f;
+  color: var(--gold-soft);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.08rem;
   line-height: 1;
@@ -349,9 +357,9 @@ body {
 .service-mark {
   width: 34px;
   height: 34px;
-  color: #b9a16f;
+  color: var(--gold-soft);
   fill: none;
-  opacity: 0.58;
+  opacity: 0.5;
   stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -369,7 +377,7 @@ body {
 
 .service-card p {
   margin: 22px 0 0;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--service-copy);
   font-size: 0.96rem;
   line-height: 1.55;
 }
@@ -383,7 +391,7 @@ body {
 }
 
 .service-card li {
-  color: rgba(255, 255, 255, 0.86);
+  color: var(--service-strong);
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0;
@@ -400,7 +408,7 @@ body {
 
 .services-footer > span {
   max-width: 660px;
-  color: rgba(255, 255, 255, 0.66);
+  color: var(--service-muted);
   font-size: 0.96rem;
   line-height: 1.5;
 }
@@ -411,9 +419,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.38);
+  border: 1px solid var(--service-line-strong);
   border-radius: 999px;
-  color: #ffffff;
+  color: var(--service-fg);
   padding: 12px 20px;
   font-size: 0.78rem;
   font-weight: 800;
@@ -439,8 +447,8 @@ body {
 
 .services-link:hover,
 .services-link:focus-visible {
-  background: #ffffff;
-  color: var(--ink);
+  background: var(--service-fg);
+  color: var(--service-bg);
   outline: none;
   transform: translateY(-1px);
 }
