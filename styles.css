@@ -647,6 +647,38 @@ body {
   }
 }
 
+@keyframes logo-snap-mobile {
+  0%,
+  10% {
+    transform: translateX(0);
+  }
+
+  18%,
+  28% {
+    transform: translateX(calc(-1 * (var(--logo-width) + var(--logo-gap))));
+  }
+
+  36%,
+  46% {
+    transform: translateX(calc(-2 * (var(--logo-width) + var(--logo-gap))));
+  }
+
+  54%,
+  64% {
+    transform: translateX(calc(-3 * (var(--logo-width) + var(--logo-gap))));
+  }
+
+  72%,
+  82% {
+    transform: translateX(calc(-4 * (var(--logo-width) + var(--logo-gap))));
+  }
+
+  90%,
+  100% {
+    transform: translateX(calc(-5 * (var(--logo-width) + var(--logo-gap))));
+  }
+}
+
 @media (max-width: 1120px) and (min-width: 761px) {
   .services-mosaic {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -665,8 +697,8 @@ body {
 
 @media (max-width: 760px) {
   :root {
-    --logo-width: 318px;
-    --logo-gap: 22px;
+    --logo-width: 84vw;
+    --logo-gap: 18px;
   }
 
   .logo-page {
@@ -688,7 +720,13 @@ body {
   }
 
   .logo-carousel {
+    mask-image: linear-gradient(90deg, transparent 0, black 4%, black 96%, transparent 100%);
     padding: 12px 0;
+  }
+
+  .logo-track {
+    padding-left: calc((100vw - var(--logo-width)) / 2);
+    animation: logo-snap-mobile 28s ease-in-out infinite;
   }
 
   .logo-item {
