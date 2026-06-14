@@ -3,17 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>interrete | Συνεργασίες</title>
-    <meta name="description" content="Εταιρείες και brands που συνεργάζονται με την interrete." />
+    <title>Interrete | Συνεργασίες</title>
+    <meta name="description" content="Εταιρείες και brands που συνεργάζονται με την Interrete." />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="styles.css?v=20260614-services-neutral" />
+    <link rel="stylesheet" href="styles.css?v=20260614-service-pages" />
+    <script src="menu.js?v=20260614-service-pages" defer></script>
   </head>
   <body>
-    <header class="brand-header" aria-label="interrete">
-      <div class="brand-wordmark">interrete</div>
+    <header class="brand-header" aria-label="Interrete">
+      <a class="brand-wordmark" href="index.html" aria-label="Interrete αρχική">Interrete</a>
+      <button class="menu-toggle" type="button" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="site-menu" title="Μενού">
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-menu" class="site-menu" aria-label="Κύρια πλοήγηση">
+        <a href="services.html">Υπηρεσίες</a>
+        <a href="mailto:hello@interrete.gr">Επικοινωνία</a>
+      </nav>
     </header>
 
-    <main class="logo-page" aria-label="Συνεργασίες">
+    <main id="home" class="logo-page" aria-label="Συνεργασίες">
       <section class="logo-stage">
         <div class="logo-carousel" aria-label="Λογότυπα εταιρειών">
           <div class="logo-track">
@@ -56,130 +65,7 @@
             </a>
           </div>
         </div>
-
-        <div class="services-cta">
-          <a class="services-button" href="#services" aria-label="Μετάβαση στις υπηρεσίες">
-            <span>Services</span>
-            <svg aria-hidden="true" viewBox="0 0 20 20">
-              <path d="M4 10h10.5M10.5 5.5 15 10l-4.5 4.5" />
-            </svg>
-          </a>
-        </div>
       </section>
     </main>
-
-    <section id="services" class="services-section" aria-labelledby="services-title">
-      <div class="services-inner">
-        <div class="services-heading">
-          <p class="section-kicker">Υπηρεσίες</p>
-          <div>
-            <h1 id="services-title">Ψηφιακές λύσεις με καθαρή αισθητική, τεχνικό βάθος και διάρκεια.</h1>
-            <p class="services-intro">
-              Η interrete σχεδιάζει και αναπτύσσει websites, e-shops και custom ψηφιακές εφαρμογές
-              για brands που χρειάζονται σοβαρή παρουσία, γρήγορη λειτουργία και σωστή τεχνική βάση.
-            </p>
-          </div>
-        </div>
-
-        <div class="services-grid" aria-label="interrete services">
-          <article class="service-card">
-            <div class="service-card-head">
-              <span class="service-index">01</span>
-              <svg class="service-mark" aria-hidden="true" viewBox="0 0 48 48">
-                <path d="M13 16h22v16H13z" />
-                <path d="M13 21h22" />
-              </svg>
-            </div>
-            <h2>Premium Ιστοσελίδες</h2>
-            <p>Ιστοσελίδες με καθαρή αισθητική, γρήγορη εμπειρία χρήσης και δομή που αναδεικνύει το brand χωρίς περιττό θόρυβο.</p>
-            <ul>
-              <li>Corporate websites, landing pages και portfolio sites</li>
-              <li>Minimal UI/UX με έμφαση στη λεπτομέρεια</li>
-              <li>Responsive ανάπτυξη, ταχύτητα και βασική SEO δομή</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <div class="service-card-head">
-              <span class="service-index">02</span>
-              <svg class="service-mark" aria-hidden="true" viewBox="0 0 48 48">
-                <path d="M16 19h16l-1.5 16h-13z" />
-                <path d="M20 19c0-4 2-6 4-6s4 2 4 6" />
-              </svg>
-            </div>
-            <h2>E-shops & E-commerce</h2>
-            <p>Online καταστήματα σχεδιασμένα για αξιοπιστία, καθαρή πλοήγηση και ομαλή αγοραστική εμπειρία.</p>
-            <ul>
-              <li>Δομή προϊόντων, κατηγοριών και checkout flow</li>
-              <li>Πληρωμές, αποστολές και βασικές διασυνδέσεις</li>
-              <li>Performance, analytics και βελτιώσεις conversion</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <div class="service-card-head">
-              <span class="service-index">03</span>
-              <svg class="service-mark" aria-hidden="true" viewBox="0 0 48 48">
-                <path d="M13 16h16v13H13z" />
-                <path d="M33 13h5v22h-5z" />
-              </svg>
-            </div>
-            <h2>Web & Mobile Apps</h2>
-            <p>Custom εφαρμογές για επιχειρήσεις, πλατφόρμες και internal tools με λειτουργικότητα πέρα από ένα απλό website.</p>
-            <ul>
-              <li>Web apps, dashboards, portals και admin συστήματα</li>
-              <li>Mobile-ready ή cross-platform εφαρμογές όπου χρειάζεται</li>
-              <li>Authentication, βάσεις δεδομένων, APIs και ρόλοι χρηστών</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <div class="service-card-head">
-              <span class="service-index">04</span>
-              <svg class="service-mark" aria-hidden="true" viewBox="0 0 48 48">
-                <path d="M24 15v18" />
-                <path d="M15 24h18" />
-                <path d="M18 18l12 12" />
-                <path d="M30 18L18 30" />
-              </svg>
-            </div>
-            <h2>AI Αυτοματισμοί</h2>
-            <p>Έξυπνοι αυτοματισμοί που συνδέουν εργαλεία, δεδομένα και διαδικασίες για λιγότερο χειροκίνητο έργο.</p>
-            <ul>
-              <li>AI assistants, chatbots και custom workflows</li>
-              <li>Αυτοματισμοί για emails, CRM, reports και διαδικασίες</li>
-              <li>Διασυνδέσεις με APIs και business tools</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <div class="service-card-head">
-              <span class="service-index">05</span>
-              <svg class="service-mark" aria-hidden="true" viewBox="0 0 48 48">
-                <path d="M24 12l11 5v8c0 6-4 11-11 14-7-3-11-8-11-14v-8z" />
-                <path d="M19 25l4 4 7-9" />
-              </svg>
-            </div>
-            <h2>Τεχνική Φροντίδα</h2>
-            <p>Συνεχής υποστήριξη για websites και εφαρμογές που πρέπει να παραμένουν γρήγορα, ασφαλή και ενημερωμένα.</p>
-            <ul>
-              <li>Updates, backups, monitoring και security checks</li>
-              <li>Βελτιώσεις ταχύτητας, bugs και τεχνική συντήρηση</li>
-              <li>Νέα features, επεκτάσεις και ongoing optimization</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="services-footer">
-          <span>Ένα σωστό ψηφιακό προϊόν δεν πρέπει απλώς να δείχνει καλό. Πρέπει να λειτουργεί σωστά, να αντέχει και να εξελίσσεται.</span>
-          <a class="services-link" href="mailto:hello@interrete.gr" aria-label="Contact interrete">
-            <span>Μίλησέ μας</span>
-            <svg aria-hidden="true" viewBox="0 0 20 20">
-              <path d="M4 10h10.5M10.5 5.5 15 10l-4.5 4.5" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
   </body>
 </html>
