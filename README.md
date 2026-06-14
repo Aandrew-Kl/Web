@@ -1,6 +1,6 @@
-# Andreas Klime Web
+# interrete Web
 
-Static landing page for Andreas Klime's web development portfolio site.
+Static landing page for interrete's web development portfolio site.
 
 ## Files
 
