@@ -323,7 +323,7 @@ body {
 }
 
 .service-card {
-  min-height: 460px;
+  min-height: 440px;
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgba(255, 255, 255, 0.18);
@@ -336,7 +336,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 18px;
+  gap: 14px;
 }
 
 .service-index {
@@ -347,20 +347,20 @@ body {
 }
 
 .service-mark {
-  width: 46px;
-  height: 46px;
+  width: 34px;
+  height: 34px;
   color: #b9a16f;
   fill: none;
-  opacity: 0.86;
+  opacity: 0.58;
   stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 1.55;
+  stroke-width: 1.2;
   flex: 0 0 auto;
 }
 
 .service-card h2 {
-  margin: 66px 0 0;
+  margin: 72px 0 0;
   font-size: clamp(1.35rem, 2vw, 1.7rem);
   font-weight: 760;
   letter-spacing: 0;
@@ -583,12 +583,12 @@ body {
   }
 
   .service-mark {
-    width: 42px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
   }
 
   .service-card h2 {
-    margin-top: 46px;
+    margin-top: 52px;
   }
 
   .service-card ul {
