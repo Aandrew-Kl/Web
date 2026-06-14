@@ -1,18 +1,18 @@
 :root {
   --bg: #ffffff;
-  --ink: #14120f;
-  --muted: #746f66;
-  --line: rgba(20, 18, 15, 0.12);
+  --ink: #111111;
+  --muted: #70706b;
+  --line: rgba(17, 17, 17, 0.12);
   --gold: #a2834b;
   --gold-soft: #b29a66;
   --panel: #ffffff;
-  --service-bg: #12110e;
-  --service-fg: #f6f2ea;
-  --service-muted: rgba(246, 242, 234, 0.64);
-  --service-copy: rgba(246, 242, 234, 0.72);
-  --service-strong: rgba(246, 242, 234, 0.84);
-  --service-line: rgba(246, 242, 234, 0.14);
-  --service-line-strong: rgba(246, 242, 234, 0.3);
+  --service-bg: #0f0f0f;
+  --service-fg: #f4f4ef;
+  --service-muted: rgba(244, 244, 239, 0.64);
+  --service-copy: rgba(244, 244, 239, 0.72);
+  --service-strong: rgba(244, 244, 239, 0.84);
+  --service-line: rgba(244, 244, 239, 0.14);
+  --service-line-strong: rgba(244, 244, 239, 0.3);
   --logo-count: 5;
   --logo-width: 460px;
   --logo-gap: 44px;
