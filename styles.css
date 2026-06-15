@@ -3,20 +3,11 @@
   --ink: #111111;
   --muted: #70706b;
   --line: rgba(17, 17, 17, 0.12);
-  --accent: #111111;
-  --panel: #ffffff;
-  --service-bg: #ffffff;
-  --service-fg: #111111;
-  --service-muted: rgba(17, 17, 17, 0.58);
-  --service-copy: rgba(17, 17, 17, 0.68);
-  --service-strong: rgba(17, 17, 17, 0.84);
-  --service-line: rgba(17, 17, 17, 0.1);
-  --service-line-strong: rgba(17, 17, 17, 0.28);
   --serif: Georgia, "Times New Roman", serif;
   --hair: rgba(17, 17, 17, 0.13);
-  --label-ink: rgba(17, 17, 17, 0.5);
+  --label-ink: rgba(17, 17, 17, 0.64);
   --body-ink: rgba(17, 17, 17, 0.76);
-  --track-label: 0.22em;
+  --track-label: 0.18em;
   --track-link: 0.14em;
   --logo-count: 5;
   --logo-width: 460px;
@@ -321,6 +312,8 @@ body {
 .site-page {
   width: min(1320px, 100%);
   min-height: 100svh;
+  display: flex;
+  flex-direction: column;
   margin-inline: auto;
   padding: clamp(118px, 14svh, 164px) clamp(20px, 5vw, 72px) clamp(72px, 9vw, 120px);
 }
@@ -485,8 +478,12 @@ body {
 
 .service-tile:hover,
 .service-tile:focus-visible {
-  outline: none;
   padding-left: clamp(8px, 1.4vw, 22px);
+}
+
+.service-tile:focus-visible {
+  outline: 1px solid var(--ink);
+  outline-offset: 10px;
 }
 
 .service-tile:hover .service-tile-action,
@@ -500,8 +497,8 @@ body {
   align-items: flex-end;
   justify-content: space-between;
   gap: clamp(28px, 4vw, 56px);
-  margin-top: clamp(52px, 6vw, 92px);
-  padding-top: clamp(40px, 4.5vw, 64px);
+  margin-top: auto;
+  padding-top: clamp(56px, 7vw, 104px);
   border-top: 1px solid var(--hair);
 }
 
@@ -583,6 +580,7 @@ body {
   display: grid;
   grid-template-columns: minmax(150px, 0.26fr) minmax(0, 1fr);
   gap: clamp(20px, 5vw, 92px);
+  align-items: baseline;
   min-height: 0;
   border-bottom: 1px solid var(--hair);
   padding: clamp(34px, 4vw, 60px) 0;
@@ -664,11 +662,11 @@ body {
 
 .service-detail-footer {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   gap: clamp(28px, 4vw, 56px);
-  margin-top: clamp(52px, 6vw, 92px);
-  padding-top: clamp(40px, 4.5vw, 64px);
+  margin-top: auto;
+  padding-top: clamp(56px, 7vw, 104px);
   border-top: 1px solid var(--hair);
 }
 
@@ -1009,7 +1007,8 @@ body {
     align-items: start;
   }
 
-  .page-cta {
+  .page-cta,
+  .service-detail-footer {
     margin-top: 44px;
     padding-top: 34px;
   }
@@ -1099,5 +1098,13 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .logo-track {
     animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
