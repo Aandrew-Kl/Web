@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://interrete.gr/sitemap.xml
