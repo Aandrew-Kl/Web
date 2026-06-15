@@ -709,6 +709,42 @@ body {
   border-top: 1px solid var(--hair);
 }
 
+/* Brand story page — etymology moment */
+.brand-origin {
+  border-top: 1px solid var(--hair);
+  padding-top: clamp(40px, 5vw, 76px);
+  padding-bottom: clamp(8px, 2vw, 20px);
+}
+
+.brand-origin .word {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(2.8rem, 8vw, 6.4rem);
+  letter-spacing: -0.025em;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.brand-origin .word .sep {
+  margin: 0 0.18em;
+  color: var(--label-ink);
+  font-weight: 400;
+}
+
+.brand-origin .gloss {
+  max-width: 600px;
+  margin: clamp(22px, 2.6vw, 34px) 0 0;
+  color: var(--muted);
+  font-size: clamp(1.04rem, 1.5vw, 1.3rem);
+  line-height: 1.6;
+}
+
+.brand-origin .gloss em {
+  color: var(--ink);
+  font-style: normal;
+}
+
 .app-detail-page .service-detail-hero {
   max-width: 1080px;
 }
