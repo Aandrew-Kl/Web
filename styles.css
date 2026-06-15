@@ -628,6 +628,187 @@ body {
   padding-top: clamp(42px, 6vw, 72px);
 }
 
+.app-detail-page .service-detail-hero {
+  max-width: 1080px;
+}
+
+.app-detail-page .service-detail-hero h1 {
+  max-width: 1020px;
+}
+
+.app-detail-page .service-detail-hero p {
+  max-width: 760px;
+}
+
+.app-blueprint,
+.app-modules,
+.app-process,
+.app-fit {
+  border-top: 1px solid var(--service-line);
+}
+
+.app-blueprint {
+  display: grid;
+  grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
+  gap: clamp(42px, 6vw, 92px);
+  padding-top: clamp(34px, 5vw, 66px);
+}
+
+.app-blueprint-lead,
+.app-modules-intro,
+.app-process-head {
+  align-self: start;
+}
+
+.app-blueprint-lead h2,
+.app-modules-intro h2,
+.app-process-head h2 {
+  margin: 18px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 3.3vw, 3.6rem);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.app-blueprint-lead p:not(.section-kicker) {
+  margin: 22px 0 0;
+  color: var(--service-muted);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.app-use-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--service-line);
+  border-left: 1px solid var(--service-line);
+}
+
+.app-use-grid article {
+  min-height: 224px;
+  display: grid;
+  align-content: space-between;
+  border-right: 1px solid var(--service-line);
+  border-bottom: 1px solid var(--service-line);
+  padding: clamp(24px, 3vw, 34px);
+}
+
+.app-use-grid span,
+.app-process-list span {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1;
+  opacity: 0.5;
+}
+
+.app-use-grid h3,
+.app-process-list h3 {
+  margin: clamp(44px, 5vw, 74px) 0 12px;
+  color: var(--ink);
+  font-size: clamp(1.2rem, 1.7vw, 1.55rem);
+  font-weight: 760;
+  letter-spacing: 0;
+  line-height: 1.05;
+}
+
+.app-use-grid p,
+.app-process-list p {
+  margin: 0;
+  color: var(--service-copy);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.app-modules {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(42px, 6vw, 92px);
+  margin-top: clamp(58px, 7vw, 96px);
+  padding-top: clamp(34px, 5vw, 66px);
+}
+
+.app-module-list {
+  display: grid;
+  border-top: 1px solid var(--service-line);
+}
+
+.app-module-list article {
+  display: grid;
+  grid-template-columns: minmax(140px, 0.42fr) minmax(0, 1fr);
+  gap: clamp(22px, 3vw, 42px);
+  border-bottom: 1px solid var(--service-line);
+  padding: 22px 0;
+}
+
+.app-module-list strong {
+  color: var(--ink);
+  font-size: 0.75rem;
+  font-weight: 820;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.app-module-list p {
+  margin: 0;
+  color: var(--service-copy);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.app-process {
+  margin-top: clamp(58px, 7vw, 96px);
+  padding-top: clamp(34px, 5vw, 66px);
+}
+
+.app-process-head {
+  display: grid;
+  grid-template-columns: minmax(0, 280px) minmax(0, 780px);
+  gap: clamp(32px, 5vw, 74px);
+}
+
+.app-process-head h2 {
+  margin-top: 0;
+}
+
+.app-process-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--service-line);
+  border-left: 1px solid var(--service-line);
+  margin-top: clamp(36px, 5vw, 62px);
+}
+
+.app-process-list article {
+  min-height: 238px;
+  border-right: 1px solid var(--service-line);
+  border-bottom: 1px solid var(--service-line);
+  padding: clamp(22px, 2.8vw, 32px);
+}
+
+.app-fit {
+  display: grid;
+  grid-template-columns: minmax(0, 280px) minmax(0, 760px);
+  gap: clamp(32px, 5vw, 74px);
+  margin-top: clamp(58px, 7vw, 96px);
+  padding-block: clamp(30px, 5vw, 58px);
+}
+
+.app-fit p {
+  margin: 0;
+}
+
+.app-fit p:not(.section-kicker) {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.65rem, 2.6vw, 2.8rem);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.08;
+}
+
 @keyframes logo-scroll {
   from {
     transform: translateX(0);
@@ -804,6 +985,67 @@ body {
 
   .service-panel span {
     margin-bottom: 22px;
+  }
+
+  .app-blueprint,
+  .app-modules,
+  .app-process-head,
+  .app-fit {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .app-blueprint {
+    padding-top: 30px;
+  }
+
+  .app-blueprint-lead h2,
+  .app-modules-intro h2,
+  .app-process-head h2 {
+    font-size: clamp(1.9rem, 9vw, 2.75rem);
+  }
+
+  .app-use-grid,
+  .app-process-list {
+    grid-template-columns: 1fr;
+    border-left: 0;
+  }
+
+  .app-use-grid article,
+  .app-process-list article {
+    min-height: 0;
+    border-left: 1px solid var(--service-line);
+    padding: 26px 24px;
+  }
+
+  .app-use-grid h3,
+  .app-process-list h3 {
+    margin-top: 42px;
+  }
+
+  .app-modules,
+  .app-process,
+  .app-fit {
+    margin-top: 54px;
+    padding-top: 30px;
+  }
+
+  .app-module-list article {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  .app-process-list {
+    margin-top: 30px;
+  }
+
+  .app-fit {
+    padding-bottom: 32px;
+  }
+
+  .app-fit p:not(.section-kicker) {
+    font-size: clamp(1.65rem, 8vw, 2.35rem);
   }
 }
 
